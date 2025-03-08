@@ -105,8 +105,8 @@ function About() {
       onMouseUp={stopDrag}
     >
       <div className="ff gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
-          <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="http://localhost:5173">Домой</a>
-          <a className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" href="http://localhost:5173/clicker">Кликер</a>
+          <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app">Домой</a>
+          <a className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app/clicker">Кликер</a>
             </div>
       <h1 className="text-4xl font-bold text-[#084f81] mb-4 font-light">Playground</h1>
 

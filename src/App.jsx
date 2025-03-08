@@ -3,7 +3,7 @@ import Home from "./pages/Home"
 import Category from "./pages/Category"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
-import Myself from "./pages/Myself"
+import Myself from "./component/Myself"
 
 function App() {
  
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/clicker" element={<Category />}/>
         <Route path="/pl" element={<About />}/>
-        <Route path="/me"  element={<Myself/>}/>
+        
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </BrowserRouter>

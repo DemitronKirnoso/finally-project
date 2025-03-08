@@ -2,6 +2,8 @@ import axios from "axios"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState, useEffect } from 'react'
 import 'swiper/css';
+import Myself from "../component/Myself";
+import { Link } from "react-router";
 const Home = () => {
     const [cars, setCars] = useState([]);
 
@@ -19,8 +21,9 @@ const Home = () => {
         <div className="">
             
             <div className="ff gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
-            <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="http://localhost:5173/clicker">Кликер</a>
-            <a className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" href="http://localhost:5173/pl">Что-то</a>
+            <Link to="/clicker" className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" >Кликер</Link>
+            <Link to="/pl" className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" >Что-то</Link>
+            <Link to="/pl" className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" ></Link>
             </div>            
             <div>
             <Swiper
@@ -51,6 +54,7 @@ const Home = () => {
                     </div>
                 ))}
             </div>
+    <Myself/>
             <div className="tt gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] "></div>
         </div>
 

@@ -198,8 +198,8 @@ function Category() {
     <div className='flex'>
       <div className=''>
         <div className="ff gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
-          <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="http://localhost:5173">Домой</a>
-          <a className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" href="http://localhost:5173/pl">Что-то</a>
+          <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app/">Домой</a>
+          <a className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app/pl">Что-то</a>
         </div>
         <div className='flex'></div>
         <div className='flex justify-center w-screen h-auto bg-[url("https://www.fabricsandpapers.com/media/catalog/product/cache/6eb7ad2e23ee8696c4e64c0befcff895/j/a/jaggedstripe_denim-1024x1024.jpg")]'>
