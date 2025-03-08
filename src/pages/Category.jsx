@@ -204,7 +204,7 @@ function Category() {
         <div className='flex'></div>
         <div className='flex justify-center w-screen h-auto bg-[url("https://www.fabricsandpapers.com/media/catalog/product/cache/6eb7ad2e23ee8696c4e64c0befcff895/j/a/jaggedstripe_denim-1024x1024.jpg")]'>
           <div className='flex flex-col mr-[100px]'>
-            <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[400px] text-[70px] h-[400px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[325px] active:h-[325px] active:mt-[100px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
+            <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
               {texts[index]}
             </button>
            
