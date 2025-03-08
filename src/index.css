@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ponomar&display=swap');
+
+
+
+a {
+  text-shadow: 4px 4px 0px rgb(0, 0, 116);
+}
+
+.gg {
+  text-shadow: 4px 4px 0px rgb(255, 205, 5);
+}
+
+.ff {
+  background: linear-gradient(to bottom, #90e6ff, transparent);
+  
+  z-index: 2;
+  
+}
+
+.tt {
+  background: linear-gradient(to top, #90e6ff, transparent);
+  
+  z-index: 2;
+  
+}
+
+.About {
+  text-align: center;
+}
+
+.playground {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item {
+  margin: 10px;
+}
+
