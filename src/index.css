@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ponomar&display=swap');
 
 
@@ -41,3 +42,6 @@ a {
   margin: 10px;
 }
 
+button {
+  font-family: "Rubik Bubbles";
+}
