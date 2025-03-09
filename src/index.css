@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ponomar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 
 
@@ -43,5 +44,5 @@ a {
 }
 
 button {
-  font-family: "Rubik Bubbles";
+  font-family: "Sofia Sans Condensed";
 }
