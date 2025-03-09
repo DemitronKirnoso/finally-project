@@ -203,7 +203,7 @@ function Category() {
 
       <div className='flex flex-col justify-center md: w-full md:flex md:flex-row md:h-auto h-full  '>
         <div className='flex items-center flex-col md:items-start md:mr-[100px]'>
-          <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
+          <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all md:duration-225 duration-100 ease-out'>
             {texts[index]}
           </button>
 
