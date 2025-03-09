@@ -23,7 +23,7 @@ const Home = () => {
             <div className="ff gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
             <Link to="/clicker" className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" >Кликер</Link>
             <Link to="/pl" className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" >Что-то</Link>
-            <Link to="/pl" className="text-[50px] gap-[50px] ml-[100px] font-extrabold text-[#0061ff]" ></Link>
+            
             </div>            
             <div>
             <Swiper
