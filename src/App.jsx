@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/clicker" element={<Category />}/>
         <Route path="/pl" element={<About />}/>
-        
         <Route path="*" element={<NotFound />}/>
       </Routes>
     </BrowserRouter>

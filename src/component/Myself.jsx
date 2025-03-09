@@ -21,9 +21,10 @@ const Myself = () => {
     return (
         <div>
             <div>
-                <h1 className='mt-[30px] ml-[25px] text-[40px] text-[#1e275f]'>Инструменты с которыми я научился работать:</h1>
+                <h1 className='mt-[30px] md:ml-[25px] ml-[25px] md:font-medium font-semibold md:text-[40px] text-[#1e275f] text-[30px] md:w-auto w-[350px] md:text-left text-center hidden md:block'>Инструменты с которыми я научился работать:</h1>
+                <h1 className='mt-[30px] md:ml-[25px] ml-[25px] md:font-medium font-semibold md:text-[40px] text-[#1e275f] text-[30px] md:w-auto w-[350px] md:text-left text-center md:hidden'>Мои инструмены: </h1>
             </div>
-            <div className='w-[900px] flex flex-wrap gap-[10px] mt-[30px] ml-[25px] justify-left'>
+            <div className='md:w-[900px] w-[385px] flex flex-wrap gap-[10px] mt-[30px] md:ml-[25px] ml-[5px] md:justify-left justify-center'>
 
                 <Tooltip title="JavaScript
 Язык программирования, на котором пишут веб-приложения." placement='top'>

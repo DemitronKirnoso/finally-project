@@ -202,7 +202,7 @@ function Category() {
           
         </div>
         <div className='flex'></div>
-        <div className='flex justify-center w-screen h-auto bg-[url("https://www.fabricsandpapers.com/media/catalog/product/cache/6eb7ad2e23ee8696c4e64c0befcff895/j/a/jaggedstripe_denim-1024x1024.jpg")]'>
+        <div className='flex justify-center w-full h-auto bg-[url("https://www.fabricsandpapers.com/media/catalog/product/cache/6eb7ad2e23ee8696c4e64c0befcff895/j/a/jaggedstripe_denim-1024x1024.jpg")]'>
           <div className='flex flex-col mr-[100px]'>
             <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
               {texts[index]}
@@ -213,9 +213,17 @@ function Category() {
              
               
             
-          <div className='flex gap-[70px]'>
+          <div className=' flex flex-col md:flex-row gap-[70px]'>
+          <div className='flex flex-col items-center rounded-[15px] p-[10px] h-[400px] bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:hidden block'>
+              <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Прокачка:</h1>
+
+              <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
+              <button onClick={handleBuyHammer} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Молот⛏️(300 ударов)</button>
+              <button onClick={handleUpgradeSuperHit} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Улучшить Супер Удар💥(250 ударов)</button>
+              
+            </div>
             {/* Олег */}
-            <div className={`flex flex-col items-center rounded-[15px] p-[10px] h-auto bg-[#a0d8ff] border border-[#084f81] flip-right w-[600px]`}>
+            <div className={`flex flex-col items-center rounded-[15px] p-[10px] h-auto bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px]`}>
               <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Имя: Олег😎</h1>
               <h2 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Ударов: {clicks}👊</h2>
               <div className='mt-[4px] font-extrabold text-[30px] text-[#084f81] ' id='timer'>Возраст: 00:00:00⏳</div>
@@ -243,7 +251,7 @@ function Category() {
             </div>
 
             
-            <div className='flex flex-col items-center rounded-[15px] p-[10px] h-screen bg-[#a0d8ff] border border-[#084f81] flip-right w-[600px]'>
+            <div className='flex flex-col items-center rounded-[15px] p-[10px] h-screen bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:block hidden'>
               <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Прокачка:</h1>
 
               <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
