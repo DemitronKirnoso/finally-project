@@ -195,73 +195,69 @@ function Category() {
   const style = 'mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out';
 
   return (
-    <div className='flex'>
-      <div className=''>
-        <div className="ff gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
-          <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app/">Домой</a>
-          
+    <div className='bg-[url("https://zefirka.club/wallpapers/uploads/posts/2023-02/thumbs/1676432064_zefirka-club-p-beskonechnii-fon-dlya-saita-12.jpg")]'>
+      <div className="ffy gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] ">
+        <a className="text-[50px] gap-[50px] ml-[30px] font-extrabold text-[#0061ff]" href="https://finally-project-kappa.vercel.app/">Домой</a>
+      </div>
+
+
+      <div className='flex flex-col justify-center md: w-full md:flex md:flex-row md:h-auto h-full  '>
+        <div className='flex items-center flex-col md:items-start md:mr-[100px]'>
+          <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
+            {texts[index]}
+          </button>
+
         </div>
-        <div className='flex'></div>
-        <div className='flex justify-center w-full h-auto bg-[url("https://www.fabricsandpapers.com/media/catalog/product/cache/6eb7ad2e23ee8696c4e64c0befcff895/j/a/jaggedstripe_denim-1024x1024.jpg")]'>
-          <div className='flex flex-col mr-[100px]'>
-            <button onClick={handleClick} className='mt-[85px] drop-shadow-[0_35px_35px_black] w-[230px] text-[50px] h-[230px] rounded-[185px] px-6 py-3 bg-[#aed4ff] active:w-[190px] active:h-[190px] active:mt-[100px] active:text-[35px] active:animate-temp-color active:bg-[#91bdef] transition-all duration-225 ease-out'>
-              {texts[index]}
-            </button>
-           
+        <div className=' flex flex-col items-center mt-[70px] md:flex-row md:mt-0 md:items-start gap-[70px]'>
+          <div className='flex flex-col items-center rounded-[15px] p-[10px] h-[400px] bg-[url("https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1661431512_3-kartinkin-net-p-fon-dlya-saita-besshovnii-temnii-krasivo-3.jpg")] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:hidden block'>
+            <h1 className='mt-[4px] font-extrabold text-[30px] text-[#a4dcff] '>Прокачка:</h1>
+
+            <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
+            <button onClick={handleBuyHammer} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Молот⛏️(300 ударов)</button>
+            <button onClick={handleUpgradeSuperHit} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Улучшить Супер Удар💥(250 ударов)</button>
+
           </div>
 
-             
-              
-            
-          <div className=' flex flex-col md:flex-row gap-[70px]'>
-          <div className='flex flex-col items-center rounded-[15px] p-[10px] h-[400px] bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:hidden block'>
-              <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Прокачка:</h1>
+          {/* Олег */}
+          <div className={`flex flex-col items-center rounded-[15px] p-[10px] h-auto bg-[url("https://bogatyr.club/uploads/posts/2023-01/thumbs/1674834190_bogatyr-club-p-zadnii-fon-dlya-saita-fon-vkontakte-9.jpg")] border border-[#084f81] flip-right md:w-[600px] w-[300px]`}>
+            <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Имя: Олег😎</h1>
+            <h2 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Ударов: {clicks}👊</h2>
+            <div className='mt-[4px] font-extrabold text-[30px] text-[#084f81] ' id='timer'>Возраст: 00:00:00⏳</div>
+            <button onClick={handleSuperHit} className="font-bold text-[#850000] mt-[15px] bg-[#ffdc2c] border border-[#8b0000] border-[4px] rounded-[15px] p-[10px] hover:bg-[#c69c29] transition-all duration-225 ease-out">Забрать Супер Удар🧨</button>
+            <button onClick={handleBuyDog} className="font-bold text-[#784003] mt-[15px] bg-[#ffc6a3] border border-[#482900] border-[4px] rounded-[15px] p-[10px] hover:bg-[#d3bca3] transition-all duration-225 ease-out">Купить собаку🐺</button>
+            <button onClick={handleBuyGolem} className="font-bold text-[#3b3b3b] mt-[15px] bg-[#eaeaea] border border-[#363636] border-[4px] rounded-[15px] p-[10px] hover:bg-[#c3c3c3] transition-all duration-225 ease-out">Купить Голема🪨</button>
 
-              <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
-              <button onClick={handleBuyHammer} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Молот⛏️(300 ударов)</button>
-              <button onClick={handleUpgradeSuperHit} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Улучшить Супер Удар💥(250 ударов)</button>
-              
-            </div>
-            {/* Олег */}
-            <div className={`flex flex-col items-center rounded-[15px] p-[10px] h-auto bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px]`}>
-              <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Имя: Олег😎</h1>
-              <h2 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Ударов: {clicks}👊</h2>
-              <div className='mt-[4px] font-extrabold text-[30px] text-[#084f81] ' id='timer'>Возраст: 00:00:00⏳</div>
-              <button onClick={handleSuperHit} className="font-bold text-[#850000] mt-[15px] bg-[#ffdc2c] border border-[#8b0000] border-[4px] rounded-[15px] p-[10px] hover:bg-[#c69c29] transition-all duration-225 ease-out">Забрать Супер Удар🧨</button>
-              <button onClick={handleBuyDog} className="font-bold text-[#784003] mt-[15px] bg-[#ffc6a3] border border-[#482900] border-[4px] rounded-[15px] p-[10px] hover:bg-[#d3bca3] transition-all duration-225 ease-out">Купить собаку🐺</button>
-              <button onClick={handleBuyGolem} className="font-bold text-[#3b3b3b] mt-[15px] bg-[#eaeaea] border border-[#363636] border-[4px] rounded-[15px] p-[10px] hover:bg-[#c3c3c3] transition-all duration-225 ease-out">Купить Голема🪨</button>
-              
 
-               
-            
-              <div className='flex-col items-center justify-center'>
-                 <div className="mt-5 flex flex-wrap gap-4">
+
+
+            <div className='flex-col items-center justify-center'>
+              <div className="mt-5 flex flex-wrap gap-4">
                 {dogs.map((dog, index) => (
                   <img key={index} src={dog} alt="Собака" className="w-25  h-25 rounded-lg" />
                 ))}
               </div>
-            
-           
-            <div className="mt-5 flex flex-wrap gap-4">
+
+
+              <div className="mt-5 flex flex-wrap gap-4">
                 {golem.map((golemImage, indexb) => (
                   <img key={indexb} src={golemImage} alt="Голем" className="w-75 h-75 rounded-lg" />
                 ))}
               </div>
-              </div>
             </div>
-
-            
-            <div className='flex flex-col items-center rounded-[15px] p-[10px] h-screen bg-[#a0d8ff] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:block hidden'>
-              <h1 className='mt-[4px] font-extrabold text-[30px] text-[#084f81] '>Прокачка:</h1>
-
-              <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
-              <button onClick={handleBuyHammer} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Молот⛏️(300 ударов)</button>
-              <button onClick={handleUpgradeSuperHit} className="font-bold text-[#00488b] mt-[15px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Улучшить Супер Удар💥(250 ударов)</button>
-              
-            </div>
-            
-            
           </div>
+
+
+          <div className='flex flex-col rounded-[15px] p-[10px] h-screen bg-[url("https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1661431512_3-kartinkin-net-p-fon-dlya-saita-besshovnii-temnii-krasivo-3.jpg")] border border-[#084f81] flip-right md:w-[600px] w-[300px] md:block hidden'>
+            <h1 className='mt-[4px] font-extrabold text-[30px] text-[#a4dcff] text-center'>Прокачка:</h1>
+            <div className='flex flex-col justify-center items-center mt-[50px]'>
+              <button onClick={handleBuySword} className="font-bold text-[#00488b] mt-[25px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Меч ⚔️(150 ударов)</button>
+              <button onClick={handleBuyHammer} className="font-bold text-[#00488b] mt-[25px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Купить Молот⛏️(300 ударов)</button>
+              <button onClick={handleUpgradeSuperHit} className="font-bold text-[#00488b] mt-[25px] bg-[#a0d8ff] border border-[#084f81] border-[4px] rounded-[15px] p-[10px] hover:bg-[#7bc6ff] transition-all duration-225 ease-out">Улучшить Супер Удар💥(250 ударов)</button>
+            </div>
+
+          </div>
+
+
         </div>
       </div>
     </div>

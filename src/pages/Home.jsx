@@ -68,7 +68,9 @@ const Home = () => {
                     </div>
                 ))}
             </div>
-            <Myself />
+            
+            
+            <div className="items-center justify-center"><Myself /></div>
             <div className="tt gap-[50px] w-full h-[100px] opacity-75 bg-[#90e6ff] "></div>
         </div>
 

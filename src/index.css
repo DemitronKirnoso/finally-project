@@ -46,3 +46,10 @@ a {
 button {
   font-family: "Sofia Sans Condensed", sans-serif;
 }
+
+.ffy {
+  background: linear-gradient(to bottom, #90e6ff, transparent);
+  
+  z-index: 2;
+  
+}
